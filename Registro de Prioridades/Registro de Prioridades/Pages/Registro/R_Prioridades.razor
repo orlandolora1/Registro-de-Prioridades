@@ -1,0 +1,96 @@
+﻿@page "/prioridad"
+@page "/prioridad/{prioridadId:int}"
+@using Registro_de_Prioridades.Models
+
+@inject PrioridadesBLL prioriadaBLL
+
+@*<EditForm Model="prioridad"  >
+    <div class="card" >
+        <div class="card-header">
+            <h1>REGISTRO DE PRIORIDADES</h1>
+        </div>
+        <div class="card-body">
+             @* No. de Prioridades y boton de buscar *
+             @*
+            <label class="form-label">No. Prioridad</label>
+            <div class="input-group mb-3">
+            <InputNumber @bind-Value ="prioridad.PrioridadId" class="form-control" />
+            <button class="btn btn-primary oi oi-magnifying-glass" type="button" id="button-addon2"></button>
+        </div>
+            @* Fecha *@@*
+            <div class="form-group">
+                <label class="form-label">Fecha de Prioridad</label>
+                <InputDate  id="Fecha" @bind-Value="prioridad.DiasCompromiso" class="form-control"/>
+            </div>
+            @* Descripción*@@*
+            <div class="col-5 flex-fill mx-2">
+                <label class="form-label">Descripción</label>
+                <InputText @bind-Value="prioridad.Descricion" class="form-control"/>
+                
+            </div>
+            
+        </div>
+         @* Botones *@@*
+        <div class="accordion-flush">
+            <button type="button" class="btn btn-primary" @onclick= "Nuevo"><span class="oi oi-file"></span> Nuevo</button>
+            <button type="submit" class="btn btn-success"@onclick = "Guardar"><span class="oi oi-document"></span> Guardar</button>
+            <button type="button" class="btn btn-danger"@onclick = "Eliminar"><span class="oi oi-delete"></span> Eliminar</button>
+        </div>
+    </div>
+</EditForm>*@
+
+@code{
+   // [Parameter]
+   // public int prioridadId { get; set; }
+   // public Prioridades prioridad { get; set; } = new Prioridades();
+
+   //     protected override void OnInitialized()
+   //     {
+   //         if (prioridadId > 0)
+   //         {
+   //             prioridad.PrioridadId = prioridadId;
+   //         }
+   //     }
+    
+   // void Nuevo(){
+   //     this.prioridad = new Prioridades();
+   // }
+
+
+   //void Guardar(){
+   // if (!Validar())
+   // {
+   //     return;
+   // }
+   // if (prioriadaBLL.Guardar(prioridad))
+   // {
+   //     this.Nuevo();
+   // }
+   //}
+
+   //void Eliminar(){
+   // if (prioriadaBLL.Eliminar(prioridad))
+   // {
+   //     this.Nuevo();
+   // }
+
+   //}
+
+   //void Buscar(){
+   // var prioridadBuscar = prioriadaBLL.Buscar(prioridad.PrioridadId);
+   // if (prioridadBuscar !=null)
+   // {
+   //     prioridad = prioridadBuscar;
+   // }
+   //}
+  
+   //bool Validar(){
+   // if (string.IsNullOrEmpty(prioridad.Descricion))
+   //     return false;
+   // else
+   //     return true;
+   //}
+
+
+}
+
